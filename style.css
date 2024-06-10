@@ -15,7 +15,7 @@ body {
     @apply bg-green-700
 }
 .main-title{
-    @apply  lg:mb-5  text-[32px]/[120%] lg:text-[64px]/[110%] -tracking-[1.5px] lg:-tracking-[4px]
+    @apply  lg:mb-5  text-[32px]/[120%] lg:text-[64px]/[110%] -tracking-[1.5px] lg:-tracking-[4px] font-semibold;
 }
 .btn-lg{
     @apply leading-[64px] h-[64px]  px-28 text-lg;
@@ -29,4 +29,12 @@ body {
     .lg\:btn-lg {
         @apply h-[64px] leading-[64px] px-28 text-lg;
     }
+}
+.out-of-stock{
+    border-radius: 100px;
+    background: rba(26,30,38,0.3);
+    backdrop-filter: blur(4px);
+}
+footer{
+    background: linear-gradient(100deg, #1a1e26 0% , #01100b 100%);
 }
