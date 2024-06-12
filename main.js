@@ -23,7 +23,17 @@ $(document).ready(function(){
             },
         },
     });
-
+    new Swiper('.top-selling', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+    });
+    new Swiper('.mix-match', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-mix-match-pagination',
+        },
+    });
     $(".my-rating").starRating({
         totalStars: 5, 
         starShape: "rounded",
@@ -31,4 +41,5 @@ $(document).ready(function(){
         strokeWidth: 10,
         starSize: 25,
         });
+        
 })
